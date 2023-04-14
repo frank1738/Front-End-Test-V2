@@ -393,6 +393,7 @@ li {
   position: absolute;
   right: 10%;
   top: 35%;
+  z-index: 30;
 }
 
 .social-icons > ul {
