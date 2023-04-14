@@ -334,7 +334,7 @@ li {
   color: #fff;
   display: flex;
   align-items: center;
-  padding: 1rem 6rem;
+  padding: 1rem 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   align-self: flex-start;
   width: 100%;
@@ -345,6 +345,7 @@ li {
   width: 15.58px;
   height: 15.19px;
   margin-right: 1rem;
+  margin-left: 6rem;
 }
 
 .headline-headers {
