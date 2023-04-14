@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Satoshi', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -45,6 +46,7 @@ input {
   background-color: rgb(6, 5, 17);
   font-weight: 700;
   color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .left {
@@ -76,11 +78,22 @@ input {
   gap: 10px;
   align-items: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 5px 0 5px 10px;
+  padding: 5px 5px 5px 10px;
   border-radius: 6px;
   color: rgba(255, 255, 255, 0.56);
   line-height: 20px;
   font-weight: 200;
+}
+
+.blog > :nth-child(6) {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog > :nth-child(3),
+.blog > :nth-child(5) {
+  display: flex;
+  align-items: center;
 }
 
 .nav-btn {
@@ -100,7 +113,7 @@ input {
 }
 
 .book > :nth-child(2) {
-  margin-top: 1px;
+  margin-top: 3px;
 }
 
 .right > ul > :nth-child(3) {
@@ -124,8 +137,16 @@ input {
   align-items: center;
 }
 
+.left-banner > img {
+  height: 525px;
+}
+
 li {
   list-style: none;
+}
+
+.right-banner > img {
+  height: 525px;
 }
 
 .logo-section {
@@ -136,4 +157,94 @@ li {
 .logo-section > a > img {
   width: 30.4px;
   height: 30.4px;
+  margin-top: 3px;
+}
+
+.headline {
+  width: 100%;
+  background-color: rgb(6, 5, 17);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.left-banner {
+  position: absolute;
+  left: -450px;
+}
+
+.right-banner {
+  position: absolute;
+  right: 0%;
+}
+
+.back {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem 3.9rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  align-self: flex-start;
+  width: 100%;
+}
+
+.back > a > img {
+  width: 15.58px;
+  height: 15.19px;
+  margin-right: 1rem;
+}
+
+.headline-headers {
+  margin-top: 5rem;
+  width: 90%;
+  padding: 0 5rem;
+}
+
+.headline-headers > h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.headline-headers > p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 1rem;
+  opacity: 0.56;
+  width: 80%;
+}
+
+.blog {
+  color: #fff;
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+}
+
+.blog-image {
+  width: 40px;
+  height: 40px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.social-icons {
+  position: absolute;
+  right: 10%;
+  top: 35%;
+}
+
+.social-icons > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
