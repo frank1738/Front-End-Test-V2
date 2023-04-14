@@ -40,6 +40,7 @@
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
+    <li>Firebase</li>
     <li>Linters</li>
   </ul>
 </details>
